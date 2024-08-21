@@ -1,5 +1,7 @@
 #!/bin/bash
 
+flatpak install flathub com.mattjakeman.ExtensionManager -y
+
 flatpak install flathub com.brave.Browser -y
 
 flatpak install flathub com.heroicgameslauncher.hgl -y
