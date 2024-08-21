@@ -5,7 +5,7 @@
 sudo apt install flatpak -y
 
 #Installing software center deb version
-sudo apt install gnome-software-plugin-flatpak
+sudo apt install gnome-software-plugin-flatpak -y
 
 #Adding Flatpak Repository 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
