@@ -1,0 +1,14 @@
+#!/bin/bash
+
+flatpak install flathub com.brave.Browser
+
+flatpak install flathub com.heroicgameslauncher.hgl
+
+flatpak install flathub com.valvesoftware.Steam
+
+flatpak install flathub net.davidotek.pupgui2
+
+flatpak install flathub com.github.johnfactotum.Foliate
+
+flatpak install flathub com.github.tchx84.Flatseal
+
