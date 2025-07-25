@@ -12,7 +12,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 sudo snap remove --purge firefox
 sudo snap remove --purge snap-store
-sudo snap remove --purge gnome-42-2204
+sudo snap remove --purge gnome-48-2204
 sudo snap remove --purge gtk-common-themes
 sudo snap remove --purge snapd-desktop-integration
 sudo snap remove --purge bare
