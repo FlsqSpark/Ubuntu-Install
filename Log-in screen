@@ -1,0 +1,10 @@
+To have gdm login screen appear on external monitor - 
+
+sudo cp ~/.config/monitors.xml ~gdm/.config/monitors.xml
+sudo chown gdm:gdm ~gdm/.config/monitors.xml
+
+sudo nano etc/gdm3/custom.conf
+
+uncomment WaylandEnable=false
+
+reboot
