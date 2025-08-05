@@ -1,0 +1,9 @@
+# to change the boot order for windows and linux when dualbooting
+
+# Make Windows (0000) boot first, then Ubuntu (0001)
+sudo efibootmgr -o 0000,0001,0002
+
+# Make Ubuntu boot first
+sudo efibootmgr -o 0001,0000,0002
+
+# These numbers may not be accurate dependign on your install - so just change as need be.
