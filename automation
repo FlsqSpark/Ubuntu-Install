@@ -1,0 +1,39 @@
+#!/bin/bash
+
+#Flatpak support
+
+sudo apt update; sudo apt upgrade -y
+
+sudo add-apt-repository ppa:touchegg/stable
+sudo apt update
+sudo apt install touchegg
+
+sudo apt install curl -y
+
+sudo apt install flatpak -y
+
+sudo apt install gnome-software-plugin-flatpak -y
+
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+flatpak install flathub com.mattjakeman.ExtensionManager -y
+
+flatpak install flathub com.brave.Browser -y
+
+flatpak install flathub com.heroicgameslauncher.hgl -y
+
+flatpak install flathub com.valvesoftware.Steam -y
+
+flatpak install flathub net.davidotek.pupgui2 -y
+
+flatpak install flathub com.github.johnfactotum.Foliate -y
+
+flatpak install flathub com.github.tchx84.Flatseal -y
+
+# monitor support
+
+sudo cp ~/.config/monitors.xml ~gdm/.config/monitors.xml
+sudo chown gdm:gdm ~gdm/.config/monitors.xml
+
+echo "type in: "sudo nano etc/gdm3/custom.conf" and uncomment WaylandEnable=false. then reboot"
+
