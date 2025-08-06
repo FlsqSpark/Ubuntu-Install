@@ -4,6 +4,7 @@
 
 sudo apt update; sudo apt upgrade -y
 
+
 sudo add-apt-repository ppa:touchegg/stable
 sudo apt update
 sudo apt install touchegg
@@ -37,3 +38,4 @@ sudo chown gdm:gdm ~gdm/.config/monitors.xml
 
 echo "type in: "sudo nano etc/gdm3/custom.conf" and uncomment WaylandEnable=false. then reboot"
 
+echo "curl -fsSL https://christitus.com/linux | sh --- for the linux toolbox"
